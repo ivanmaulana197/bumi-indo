@@ -106,7 +106,7 @@
                                 <tr>
                                     <td>{{$data->title}}</td>
                                     <td>
-                                        <img class="img-fluid w-50" src="{{asset('img/event')}}/{{$data->gambar}}" alt="" srcset="">
+                                        <img src="{{$data->gambar}}" alt="wait" srcset="" width="200">
                                     </td>
                                     <td>{{$data->Category->nama_category}}</td>
                                     <td>{{$data->deskripsi}}</td>
@@ -119,10 +119,12 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <div class="btn-group">
-                                            <a href="{{route('event.edit', $data->id)}}" class="btn btn-warning" name="edit"><i class="bi bi-pencil"></i></a>
-                                            <a href="{{'hapus/event/'.$data->id}}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
-                                        </div>
+                                        <a href="{{route('event.edit', $data->id)}}" class="btn btn-warning" name="edit"><i class="bi bi-pencil"></i>Edit</a>
+                                        <form action="{{ route('event.destroy', [$data->id]) }}" method="POST">
+                                            @method('delete')
+                                            @csrf
+                                            <button class="btn btn-danger"><i class="bi bi-trash"></i> Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -158,7 +160,7 @@
                                 <tr>
                                     <td>{{$data->title}}</td>
                                     <td>
-                                        <img class="img-fluid w-50" src="{{asset('img/event')}}/{{$data->gambar}}" alt="" srcset="">
+                                        <img src="{{$data->gambar}}" alt="" srcset="" width="200px">
                                     </td>
                                     <td>{{$data->Category->nama_category}}</td>
                                     <td>{{$data->deskripsi}}</td>
@@ -171,10 +173,12 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <div class="btn-group">
-                                            <a href="{{route('event.edit', $data->id)}}" class="btn btn-warning"><i class="bi bi-pencil"></i></a>
-                                            <a href="{{'hapus/event/'.$data->id}}" class="btn btn-danger"><i class="bi bi-trash"></i></a>
-                                        </div>
+                                        <a href="{{route('event.edit', $data->id)}}" class="btn btn-warning" name="edit"><i class="bi bi-pencil"></i>Edit</a>
+                                        <form action="{{ route('event.destroy', [$data->id]) }}" method="POST">
+                                            @method('delete')
+                                            @csrf
+                                            <button class="btn btn-danger"><i class="bi bi-trash"></i> Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @endforeach
