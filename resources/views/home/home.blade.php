@@ -169,7 +169,7 @@
                             <div class="text">
                                 {{$data->deskripsi}}
                             </div>
-                            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#exampleModaFullScreen">
+                            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#exampleModaFullscreen">
                                 Launch demo modal
                             </button>
                         </div>
