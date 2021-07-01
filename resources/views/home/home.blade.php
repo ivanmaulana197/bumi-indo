@@ -192,7 +192,7 @@
                                 <img src="{{$data->gambar}}" alt="" max-width="200">
                             </div>
                             <div class="col-sm-6">
-                                <p>{{$data->deskripsi}}</p>
+                                <h6>{{$data->deskripsi}}</h6>
                             </div>
                         </div>
                     </div>
