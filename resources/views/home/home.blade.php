@@ -188,10 +188,10 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-sm-6">
                                 <img src="{{$data->gambar}}" alt="" max-width="200">
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-sm-6">
                                 <p>{{$data->deskripsi}}</p>
                             </div>
                         </div>
