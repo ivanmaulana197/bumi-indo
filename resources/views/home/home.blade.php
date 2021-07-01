@@ -170,7 +170,7 @@
                                 {{$data->deskripsi}}
                             </div>
                             <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#exampleModal{{$data->id}}">
-                                Launch demo modal
+                                Read More
                             </button>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="{{$data->gambar}}" alt="">
+                        <img src="{{$data->gambar}}" alt="" max-width="200">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
