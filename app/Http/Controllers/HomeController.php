@@ -23,7 +23,7 @@ class HomeController extends Controller
     }
 
     public function category(){
-        $event = Event::all();
+        $event = Event::latest()->where('status', 'Published')->get();
         $category = Category::all();
         return view('home.category.category', compact('event', 'category'));
     }
