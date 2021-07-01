@@ -189,17 +189,17 @@
                     <div class="modal-body">
                         <div class="container">
                             <div class="row">
-
-                                <div class="col-sm-6">
-                                    <img src="{{$data->gambar}}" alt="" max-width="200">
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <img src="{{$data->gambar}}" alt="" max-width="100">
+                                    </div>
                                 </div>
-
-                                <div class="col-sm-6">
-                                    <h6>{{$data->deskripsi}}</h6>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <h6>{{$data->deskripsi}}</h6>
+                                    </div>
                                 </div>
                             </div>
-
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
