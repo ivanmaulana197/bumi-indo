@@ -180,7 +180,7 @@
         </div>
         @foreach($deadlineApproaching as $data)
         <div class="modal fade" id="exampleModal{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  ">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen ">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title h4" id="exampleModal{{$data->id}}">{{$data->title}}</h5>
