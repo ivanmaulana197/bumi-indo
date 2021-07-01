@@ -169,7 +169,7 @@
                             <div class="text">
                                 {{$data->deskripsi}}
                             </div>
-                            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+                            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#exampleModal{{$data->id}}">
                                 Launch demo modal
                             </button>
                         </div>
@@ -178,15 +178,16 @@
                 @endforeach
             </div>
         </div>
-        <div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+        @foreach($deadlineApproaching as $data)
+        <div class="modal fade" id="exampleModal{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
+                        <h5 class="modal-title h4" id="exampleModal{{$data->id}}">{{$data->title}}</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <img src="{{$data->gambar}}" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -194,6 +195,7 @@
                 </div>
             </div>
         </div>
+        @endforeach
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
