@@ -976,7 +976,7 @@ section {
     margin-bottom: 15px;
 }
 
-.item a.main-button {
+.item button .main-button {
     margin-top: 5px;
     display: inline-block;
     color: white;
@@ -985,7 +985,7 @@ section {
     background: #50d8af;
 }
 
-.item a.main-button:hover {
+.item button .main-button:hover {
     background: #0c2e8a;
 }
 
