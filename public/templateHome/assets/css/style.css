@@ -969,6 +969,10 @@ section {
     color: #777;
     letter-spacing: 0.26px;
     line-height: 26px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     margin-bottom: 15px;
 }
 
