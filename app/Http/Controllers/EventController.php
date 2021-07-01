@@ -112,6 +112,8 @@ class EventController extends Controller
             'title' => 'required|max:100',
             'deskripsi' => 'required',
             'status' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
             'category_id' => 'required',
         ]);
         $event = Event::find($id);
@@ -126,6 +128,8 @@ class EventController extends Controller
                 'gambar' => $url,
                 'slug' => Str::slug($request->title),
                 'status' => $request->status,
+                'start_date' => $request->start_date,
+                'end_date' => $request->end_date,
                 'category_id' => $request->category_id,
             ]);
         } else {
@@ -134,6 +138,8 @@ class EventController extends Controller
                 'deskripsi' => $request->deskripsi,
                 'slug' => Str::slug($request->title),
                 'status' => $request->status,
+                'start_date' => $request->start_date,
+                'end_date' => $request->end_date,
                 'category_id' => $request->category_id,
             ]);
         }
