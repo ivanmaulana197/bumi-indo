@@ -15,11 +15,16 @@
 
     <div class="hero-slider swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-01.jpg')}}');"></div>
-            <div class="swiper-slide" style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-02.jpg')}}');"></div>
-            <div class="swiper-slide" style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-03.jpg')}}');"></div>
-            <div class="swiper-slide" style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-04.jpg')}}');"></div>
-            <div class="swiper-slide" style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-05.jpg')}}');"></div>
+            <div class="swiper-slide"
+                style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-01.jpg')}}');"></div>
+            <div class="swiper-slide"
+                style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-02.jpg')}}');"></div>
+            <div class="swiper-slide"
+                style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-03.jpg')}}');"></div>
+            <div class="swiper-slide"
+                style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-04.jpg')}}');"></div>
+            <div class="swiper-slide"
+                style="background-image: url('{{asset('templateHome/assets/img/hero-carousel/hero-05.jpg')}}');"></div>
         </div>
     </div>
 
@@ -116,14 +121,22 @@
             </div>
             <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/masukkampus.png')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/kemdikbud.png')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/sejutacita.webp')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/erasmus.png')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/umm.png')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/bi.png')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/djarum.png')}}" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/kgsp.jpg')}}" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/masukkampus.png')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/kemdikbud.png')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/sejutacita.webp')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/erasmus.png')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/umm.png')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/bi.png')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/djarum.png')}}"
+                            class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="{{asset('templateHome/assets/img/client/kgsp.jpg')}}"
+                            class="img-fluid" alt=""></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -136,7 +149,8 @@
         <div class="container" data-aos="fade-up">
             <div class="section-header">
                 <h2>Hot Event</h2>
-                <p style="color: white;"><b>Bersama kami temukan beasiswa-beasiswa impianmu, event akan berakhir dalam 10 hari mendatang<b></p>
+                <p style="color: white;"><b>Bersama kami temukan beasiswa-beasiswa impianmu, event akan berakhir dalam
+                        10 hari mendatang<b></p>
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="50">
@@ -169,7 +183,8 @@
                             <div class="text">
                                 {{$data->deskripsi}}
                             </div>
-                            <button type="button" class="main-button" data-bs-toggle="modal" data-bs-target="#exampleModal{{$data->id}}">
+                            <button type="button" class="main-button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal{{$data->id}}">
                                 Read More
                             </button>
                         </div>
@@ -179,7 +194,8 @@
             </div>
         </div>
         @foreach($deadlineApproaching as $data)
-        <div class="modal fade" id="exampleModal{{$data->id}}" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal{{$data->id}}" tabindex="-1"
+            aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl ">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -205,7 +221,8 @@
                     </div>
                 </div>
             </div>
-            @endforeach
+        </div>
+        @endforeach
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
@@ -397,17 +414,21 @@
                 <form action="templateHome/forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="form-group col-md-6 mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
                     </div>
                     <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
                     </div>
 
                     <div class="my-3">
